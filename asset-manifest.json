@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d03a2591.css",
+    "main.js": "/static/js/main.a8322f2b.js",
+    "static/js/453.ad99f80e.chunk.js": "/static/js/453.ad99f80e.chunk.js",
+    "static/media/cyberpunk01.png": "/static/media/cyberpunk01.b194ee7f7a4e671df712.png",
+    "static/media/gaming-pc-sample.webp": "/static/media/gaming-pc-sample.095d8a373926f55356dc.webp",
+    "static/media/dualshock-cover.jpg": "/static/media/dualshock-cover.7598ec49342c13b54a13.jpg",
+    "static/media/Kalameh-Regular.ttf": "/static/media/Kalameh-Regular.deb0cad0ec6b5b231214.ttf",
+    "static/media/games.webp": "/static/media/games.6856cc37174c3b343068.webp",
+    "index.html": "/index.html",
+    "main.d03a2591.css.map": "/static/css/main.d03a2591.css.map",
+    "main.a8322f2b.js.map": "/static/js/main.a8322f2b.js.map",
+    "453.ad99f80e.chunk.js.map": "/static/js/453.ad99f80e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d03a2591.css",
+    "static/js/main.a8322f2b.js"
+  ]
+}
