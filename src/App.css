@@ -1,0 +1,766 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: kalameh;
+  src: url(../public/fonts/Kalameh-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 870px) {
+  body .navigation {
+    display: none;
+  }
+
+  body .wel-text {
+    width: 100%;
+  }
+
+  body .welcome {
+    padding: 50px;
+  }
+
+  body .timeCalc {
+    width: 115%;
+    margin: 70px -30px;
+  }
+
+  body .welcome {
+    height: 900px;
+  }
+
+  body #timer {
+    display: none;
+  }
+
+  body .social-tab {
+    display: none;
+  }
+
+  body .drp-btn {
+    display: block;
+  }
+
+  body #drp-btn-close {
+    display: none;
+  }
+
+  body .ads {
+    display: block;
+  }
+
+  body .ad-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  body .Servtemp2 {
+    height: 170px;
+  }
+
+  body .Servtemp2 img {
+    width: 30%;
+  }
+
+  body .prd-image-box {
+    width: 95%;
+  }
+
+  body .prdtitle {
+    width: 300px;
+  }
+
+  body .billbox {
+    width: 70%;
+  }
+
+  body .spec-list {
+    width: auto;
+  }
+
+  body .call-btn {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+  }
+
+  body .prd-image-box img {
+    width: 300px;
+    height: 300px;
+  }
+
+  body .prd-image-box {
+    width: 300px;
+    height: 400px;
+  }
+
+  body .contact {
+    margin-top: 60px;
+  }
+
+  body .call-link {
+    width: 100%;
+  }
+
+  body .ad-text {
+    padding: 10px;
+  }
+
+  body .more-btn {
+    margin-top: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 725px) {
+  body .drp-down {
+    width: 140%;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: #000000c6;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff83;
+  border-radius: 20px;
+}
+
+:root {
+  --color1: #fff;
+  --color2: #000;
+  --color3: #0000005a;
+}
+
+@keyframes Apearing {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: kalameh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.Navbar {
+  width: 100%;
+  height: 110px;
+  background-color: #0000005a;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  display: block;
+  transition: 200ms;
+  justify-content: space-between;
+  border: 3px solid rgba(128, 128, 128, 0.056);
+  z-index: 100;
+}
+
+.logo {
+  width: 100px;
+  transition: 200ms;
+}
+
+.navigation {
+  height: auto;
+  padding: 40px 20px;
+  display: flex;
+  transition: 0.5s;
+  gap: 60px;
+}
+
+.navigation li {
+  color: var(--color1);
+  cursor: pointer;
+  transition: 200ms;
+  border-bottom: solid 3px #00000000;
+  height: 15px;
+}
+
+.navigation li:hover {
+  border-bottom: solid 3px #fff;
+  height: 31px;
+}
+
+
+
+#white-nav {
+  background-color: #ffffff1d;
+  color: var(--color1);
+  border-radius: 10px;
+  height: 45px;
+  width: 110px;
+  margin: -9px -20px;
+  border: 3px solid rgba(128, 128, 128, 0.589);
+  backdrop-filter: blur(9px);
+}
+
+
+.social-tab {
+  width: 100px;
+  height: 50px;
+  background-color: #00000000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  gap: 5px;
+  margin: 27px;
+  transition: 0.5s;
+}
+
+.nav-icons {
+  width: 35px;
+}
+
+.border {
+  border: 1px solid rgba(100, 100, 100, 0.589);
+  margin-top: 7px;
+  height: 20px;
+}
+
+.welcome {
+  background-image: url(../public/images/backgronds/cyberpunk01.png);
+  height: 700px;
+  background-size: cover;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  padding: 100px;
+  color: var(--color1);
+}
+
+.wel-text {
+  width: 45%;
+}
+
+.welcome-text {
+  margin-top: 150px;
+  cursor: default;
+  animation: Apearing 1s;
+}
+
+@keyframes move1 {
+  0% {
+    top: -10px;
+    color: #fff;
+  }50% {
+    top: 0;
+    color: #c3c3c35a;
+  } 100% {
+    top: -10px;
+    color: #fff;
+  }
+}
+
+.welcome-arrow {
+  animation: move1 2s;
+  transition: 1s;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+
+.btn-01 {
+  background-color: #0000005a;
+  backdrop-filter: blur(10px);
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #00000000;
+  transition: 200ms;
+  animation: Apearing 2s;
+}
+
+.btn-01:hover {
+  border: 2px solid #adadad4f;
+}
+
+.more {
+  margin-top: -12px;
+  width: 150px;
+}
+
+.timeCalc {
+  width: 50%;
+  height: 90%;
+  background-color: var(--color3);
+  color: var(--color1);
+  border: 2px solid #3a3a3a44;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  margin: 60px -20px;
+  transition: 200ms;
+  z-index: 1;
+  overflow: hidden;
+  display: none;
+  padding: 30px;
+  animation: a2 300ms;
+  position: relative;
+  top: 0;
+}
+
+@keyframes a2 {
+  0% {
+    top: 20px;
+    opacity: 0;
+  } 100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.Time-select {
+  width: 50%;
+  height: 60px;
+  background-color: #00000000;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #adadad4f;
+  color: #cdcdcd;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.Time-select:hover {
+  background-color: #00000017;
+}
+ 
+.time-input ,.drp-btn {
+  width: 70px;
+  height: 70px;
+  background-color: #00000000;
+  border: 2px solid #adadad4f;
+  border-radius: 15px;
+  text-align: center;
+  font-family: kalameh;
+  font-size: 20px;
+  outline: none;
+  transition: 200ms;
+  display: none;
+}
+
+.time-input:hover ,.calc-btn:hover {
+  background-color: #00000017;
+}
+
+.time-input:focus {
+  background-color: #00000017;
+  border: 2px solid #adadada7;
+}
+
+#calc-btn {
+  margin-top: 35px;
+}
+
+.time-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.bill {
+  border-top: 2px dashed #fff;
+  margin-top: 40px;
+}
+
+.drp-down {
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+  justify-content: center;
+}
+
+.drpm-button {
+  width: 100%;
+  height: 120px;
+  border-bottom: 2px solid #99999944;
+  color: var(--color1);
+  font-size: 30px;
+  transition: 200ms;
+}
+
+.drpm-button:hover {
+  background-color: #7c7c7c17;
+}
+
+.title-box {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prd-temp {
+  width: 320px;
+  height: 400px;
+  background-color: var(--color1);
+  border: 2px solid #c2c2c22b;
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 30px;
+  text-align: center;
+  transition: 200ms;
+  overflow: hidden;
+}
+
+.prd-temp:hover {
+  transform: translateY(-5px);
+  border: 2px solid #a3a3a317;
+  -webkit-box-shadow: 0px 4px 14px -2px rgba(0, 0, 0, 0.014); 
+  box-shadow: 0px 4px 14px -2px rgba(0, 0, 0, 0.126);
+}
+
+.prd-temp:hover .prd-img {
+  margin-top: -20px;
+  width: 250px;
+}
+
+.prd-img {
+  width: 3  00px;
+  margin-top: 50px;
+  z-index: -100;
+  transition: 200ms;
+}
+
+.price {
+  width: 170px;
+  padding: 2px 0;
+  border-radius: 15px;
+  background-color: #7c7c7c34;
+  backdrop-filter: blur(10px);
+}
+
+.ad-box {
+  width: 42%;
+  height: 400px;
+  background-image: url(../public/images/backgronds/gaming-pc-sample.webp);
+  border-radius: 10px;
+  background-size: cover;
+  overflow: hidden;
+  border: 2px solid #79797921;
+}
+
+.ad-text {
+  background-color: var(--color3);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 30%;
+  position: relative;
+  top: 70%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-btn {
+  width: 70px;
+  height: 70px;
+  background-color: #00000000;
+  border: 2px solid #adadad4f;
+  border-radius: 15px;
+  text-align: center;
+  font-family: kalameh;
+  font-size: 20px;
+  outline: none;
+  transition: 200ms;
+  color: #fff;
+}
+
+.more-btn:hover {
+  background-color: #55555531;
+}
+
+#ad2 {
+  background-image: url(../public/images/backgronds/dualshock-cover.jpg);
+}
+
+.games-box {
+  background-image: url(../public/images/backgronds/games.webp);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: 20px;
+  margin-top: 100px;
+}
+
+.games-cover {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color3);
+  backdrop-filter: blur(9px);
+  color: var(--color1);
+  padding-bottom: 40px;
+}
+
+.game-temp {
+  width: 247px;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.game-temp img {
+  width: 100%;
+  height: 100%;
+}
+
+.game-text {
+  background-color: var(--color3);
+  backdrop-filter: blur(9px);
+  width: 0%;
+  height: 0%;
+  position: relative;
+  top: -100%;
+  transition: 200ms;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 140px;
+  opacity: 0;
+  border: 2px solid #ffffff2d;
+}
+
+.game-temp:hover .game-text {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.Servtemp2 {
+  width: 680px;
+  height: 150px;
+  display: flex;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 200ms;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px rgb(234, 234, 234);
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+.Servtemp2:hover {
+  border: 2px solid rgb(236, 236, 236);
+}
+
+.serv-text {
+  width: 100%;
+}
+
+.Servtemp2 img{
+  width: 60%;
+  border-radius: 10px;
+}
+
+.serv-btn {
+  width: 50px;
+  height: 50px;
+  color: var(--color1);
+  background-color: var(--color2);
+  border-radius: 10px;
+  margin-top: 21px;
+  margin-left: -15px;
+  border: 2px solid var(--color2);
+  transition: 200ms;
+  display: flex;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.serv-btn:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+  width: 150px;
+}
+
+.serv-btn:hover .call-text {
+  display: block;
+}
+
+.serv-btn:hover .call-icon {
+  animation: Call 1000ms;
+}
+
+.call-text {
+  display: none;
+  width: auto;
+  animation: Opening2 500ms;
+  position: relative;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+@keyframes Call {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }  
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.footer {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../public/images/backgronds/cyberpunk01.png);
+}
+
+.footer-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #0000005a;
+  backdrop-filter: blur(10px);
+  color: var(--color1);
+}
+
+.footer-text li {
+  cursor: pointer;
+  transition: 200ms;
+  height: 30px;
+  color: #ffffff93;
+}
+
+.footer-text li:hover {
+  transform: translateX(-10px);
+  color: var(--color1);
+}
+
+.prd-image-box {
+  border: 2px solid #00000007;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 550px;
+  height: 500px;
+  padding-top: 40px;
+}
+
+.prd-image-box img {
+  width: 400px;
+  height: 400px;
+}
+
+@keyframes Opening2 {
+  0% {
+    top: 40px;
+    opacity: 0;
+  } 100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.alllist {
+  position: relative;
+  animation: Opening2 500ms;
+}
+
+.spec-list {
+  margin-top: 65px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  border: 2px dashed #0000002b;
+  padding: 20px;
+  max-width: 550px;
+}
+
+.spec-list li {
+  border-top: 2px dashed rgba(128, 128, 128, 0.112);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.billbox {
+  margin-top: 30px;
+  border-radius: 20px;
+  height: auto;
+  width: 75%;
+  border: 2px dashed #0000002b;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.call-btn {
+  width: 170px;
+  height: 40px;
+  margin-top: -10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #000;
+  transition: 200ms;
+}
+
+.call-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  width: 250px;
+  height: 300px;
+  box-shadow: 2px 2px 20px rgb(237, 237, 237);
+  text-align: center;
+  transition: 200ms;
+}
+
+.icon-box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 200ms;
+}
+
+.contact:hover {
+  border: 2px solid rgb(235, 235, 235);
+}
